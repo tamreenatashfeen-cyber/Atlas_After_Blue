@@ -13,7 +13,7 @@
   {
     "name": "Syed Saim Ali",
     "short": "Saim",
-    "role": "SAR Processing & Technical Implementation Lead",
+    "role": "SAR Pipeline & Geospatial Processing Engineer",
     "description": "Syed Saim Ali developed the NISAR GCOV processing pipeline to process satellite datasets using NASA's ASF Search API. His work included satellite-scene selection, pre-event and post-event data checks, HDF5 processing, area-of-interest extraction, raster alignment, and backscatter change calculations. He analyzed the processed satellite imagery, implemented rule-based candidate flood and anomaly classification, and prepared the final geospatial outputs and processed data, delivering them to the Project Lead for integration into the platform.",
     "linkedin": "https://www.linkedin.com/in/syed-saim-ali-783034385/",
     "photo": "img/syed-saim-ali.jpeg",
@@ -31,18 +31,18 @@
   {
     "name": "Ayan Touqeer",
     "short": "Ayan",
-    "role": "Team Collaboration Coordinator",
+    "role": "Coordination & Operations Lead",
     "description": "Ayan Touqeer supported team collaboration by setting up and managing the shared ClickUp workspace, providing team members with access, and preparing a demonstration video explaining its use. He also provided technical assistance during discussions about project data and image-format requirements, helping team members share project materials and coordinate their work.",
     "linkedin": "https://www.linkedin.com/in/m-ayan-touqeer/",
-    "photo": "img/ayan-touqeer.jpeg",
+    "photo": "img/ayan-touqeer-new.jpeg",
     "focus": "62% 38%",
     "zoom": "1.9"
   },
   {
     "name": "Sharmeen Shahid",
     "short": "Sharmeen",
-    "role": "Case Study Report Writer",
-    "description": "Sharmeen Shahid prepared the Upper Kohistan flood case-study report in PDF format, organizing and documenting the analysis and findings provided by the team.",
+    "role": "Scientific Reporting Specialist",
+    "description": "Sharmeen Shahid analyzed the team’s processed outputs and case-study documents and prepared the Upper Kohistan flash flood case-study report for Atlas After Blue. Her structured PDF documents the July 2026 event, data timeline, and detection method, and presents the results, limitations, and next steps with appropriate caution for the final submission.",
     "linkedin": "https://www.linkedin.com/in/sharmeen-shahid-475a1b427/",
     "photo": "img/sharmeen-shahid.jpeg",
     "focus": "50% 38%",
