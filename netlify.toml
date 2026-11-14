@@ -1,0 +1,3 @@
+[build]
+  # The site's files (including index.html) live in the "aab" folder
+  publish = "aab"
