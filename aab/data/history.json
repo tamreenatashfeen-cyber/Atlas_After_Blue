@@ -1,0 +1,175 @@
+{
+  "site_id": "kandia_gol",
+  "event_date": "2026-07-22",
+  "purpose": "historical_context_only",
+  "analysis_modified": false,
+  "existing_analysis_outputs_modified": false,
+  "no_satellite_download": true,
+  "generated_utc": "2026-11-14T09:45:05.710485+00:00",
+  "generated_by": "LOCAL_HISTORY_EXPORT_V1",
+  "section_caption": "Three NISAR radar observations of the same Kandia Gol study area, rendered with one shared brightness scale. Earlier images show features that predate the reported 22 July event. This history provides visual context, not confirmation of floodwater, damage or unchanged conditions.",
+  "aoi": {
+    "place": "Kandia Gol study circle, Upper Kohistan, Pakistan",
+    "center_longitude": 72.9081,
+    "center_latitude": 35.5832,
+    "coordinate_order": "longitude, latitude",
+    "radius_m": 5000,
+    "aoi_area_km2": 78.5319,
+    "bbox_wgs84_lonlat": [
+      72.85293733170872,
+      35.53813719568621,
+      72.96326375282308,
+      35.628262495937854
+    ],
+    "aoi_polygon_source": "aoi.geojson (64-segment metric circle buffered in EPSG:32643)",
+    "aoi_geojson_sha256": "b49d81a7ade3b700382fb544612c92140ebfdbde29b7226b7d7428c3c2267d71"
+  },
+  "grid": {
+    "crs": "EPSG:32643",
+    "dimensions": {
+      "width": 1001,
+      "height": 1001
+    },
+    "pixel_spacing_m": {
+      "x_step_m": 10.0,
+      "y_step_m": -10.0
+    },
+    "affine_transform_gdal_order": [
+      305460.0,
+      10.0,
+      0.0,
+      3944740.0,
+      0.0,
+      -10.0
+    ],
+    "affine_transform_rasterio_order": [
+      10.0,
+      0.0,
+      305460.0,
+      0.0,
+      -10.0,
+      3944740.0
+    ],
+    "upper_left_corner_epsg32643": {
+      "easting_m": 305460.0,
+      "northing_m": 3944740.0
+    },
+    "bounds_epsg32643": {
+      "order": "[west_min_x, south_min_y, east_max_x, north_max_y]",
+      "values_m": [
+        305460.0,
+        3934730.0,
+        315470.0,
+        3944740.0
+      ]
+    },
+    "orientation": "north_up"
+  },
+  "measurement": {
+    "instrument": "NISAR L-SAR",
+    "product_type": "L2_GCOV",
+    "track": 84,
+    "frame": 19,
+    "orbit_direction": "Ascending",
+    "frequency": "frequencyA",
+    "term": "HHHH",
+    "source_units": "1",
+    "source_scale_representation": "linear_power_gamma0",
+    "conversion_applied": "10 * log10(linear_power_gamma0) -> dB, applied once to positive valid pixels"
+  },
+  "rendering": {
+    "shared_scale": true,
+    "vmin_db": -13.9886,
+    "vmax_db": 7.6832,
+    "colormap": "grayscale (vmin_db -> 0 black, vmax_db -> 255 white)",
+    "percentile_method": "2nd_to_98th_percentile_pooled_across_three_date_common_valid_aoi_pixels",
+    "invalid_pixel_convention": "transparent_rgba (R=0, G=0, B=0, A=0 for masked/no-data/outside-AOI pixels)"
+  },
+  "common_valid_pixels": 690121,
+  "images": [
+    {
+      "src": "history_2026-07-02.png",
+      "role": "earlier_observation",
+      "caption": "Earlier reference, 2 July 2026 (20 days before event).",
+      "acquisition_utc": "2026-07-02T00:22:39Z",
+      "days_from_event": -20,
+      "source_granule_id": "NISAR_L2_PR_GCOV_024_084_A_019_4005_DHDH_A_20260702T002239_20260702T002313_P05023_N_F_J_001",
+      "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "maturity": "Provisional (CRID P05023)",
+      "cmr_metadata": "https://cmr.earthdata.nasa.gov/search/concepts/G4247635178-ASF.umm_json",
+      "source_raster": "aligned_pre_event_pre=2july.tif",
+      "source_raster_sha256": "66745315fa3a6b14096dc542aeebe51192bd51ca2dccc027f2fbb684b8ed8bfc",
+      "valid_pixels": 690944,
+      "aoi_pixels": 785307,
+      "valid_fraction": 0.8798,
+      "provenance_tags_checked": [
+        "ZERO_DOPPLER_START",
+        "MEASUREMENT_TERM",
+        "SCALE_REPRESENTATION",
+        "UNITS",
+        "FREQUENCY_GROUP",
+        "TRACK_NUMBER",
+        "FRAME_NUMBER",
+        "ORBIT_DIRECTION",
+        "SYNTHETIC_TEST_FIXTURE"
+      ]
+    },
+    {
+      "src": "history_2026-07-14.png",
+      "role": "nearer_before",
+      "caption": "Nearer-before reference, 14 July 2026 (8 days before event).",
+      "acquisition_utc": "2026-07-14T00:22:38Z",
+      "days_from_event": -8,
+      "source_granule_id": "NISAR_L2_PR_GCOV_025_084_A_019_4005_DHDH_A_20260714T002238_20260714T002313_P05023_F_F_J_001",
+      "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "maturity": "Provisional (CRID P05023)",
+      "cmr_metadata": "https://cmr.earthdata.nasa.gov/search/concepts/G4253183866-ASF.umm_json",
+      "source_raster": "aligned_pre_event.tif",
+      "source_raster_sha256": "fc269aef02ad4b546fa2a9c14962c0ba0d3e940d31d95162db64a848b5b67a04",
+      "valid_pixels": 690865,
+      "aoi_pixels": 785307,
+      "valid_fraction": 0.8797,
+      "provenance_tags_checked": [
+        "ZERO_DOPPLER_START",
+        "MEASUREMENT_TERM",
+        "SCALE_REPRESENTATION",
+        "UNITS",
+        "FREQUENCY_GROUP",
+        "TRACK_NUMBER",
+        "FRAME_NUMBER",
+        "ORBIT_DIRECTION",
+        "SYNTHETIC_TEST_FIXTURE"
+      ]
+    },
+    {
+      "src": "history_2026-07-26.png",
+      "role": "after_event",
+      "caption": "Post-event observation, 26 July 2026 (4 days after event).",
+      "acquisition_utc": "2026-07-26T00:22:37Z",
+      "days_from_event": 4,
+      "source_granule_id": "NISAR_L2_PR_GCOV_026_084_A_019_4005_DHDH_A_20260726T002237_20260726T002312_P05023_N_F_J_001",
+      "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "collection_concept_id": "C2854338529-ASF",
+      "maturity": "Provisional (CRID P05023)",
+      "cmr_metadata": "https://cmr.earthdata.nasa.gov/search/concepts/G4263512466-ASF.umm_json",
+      "source_raster": "aligned_post_event.tif",
+      "source_raster_sha256": "6f379fd6742607a2d07e34e8976cc63eb635b12a2ce7b1c95390e7f96f1fbcb1",
+      "valid_pixels": 690851,
+      "aoi_pixels": 785307,
+      "valid_fraction": 0.8797,
+      "provenance_tags_checked": [
+        "ZERO_DOPPLER_START",
+        "MEASUREMENT_TERM",
+        "SCALE_REPRESENTATION",
+        "UNITS",
+        "FREQUENCY_GROUP",
+        "TRACK_NUMBER",
+        "FRAME_NUMBER",
+        "ORBIT_DIRECTION",
+        "SYNTHETIC_TEST_FIXTURE"
+      ]
+    }
+  ]
+}
