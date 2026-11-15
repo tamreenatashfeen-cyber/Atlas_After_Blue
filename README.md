@@ -2,7 +2,7 @@
 
 Atlas After Blue (AAB) is a small web app that uses NISAR satellite radar to document how a landscape changed after a flash flood. It was built for the NASA Space Apps Challenge 2026, under the challenge "Dancing with the SARs".
 
-Live site: https://demonasa.netlify.app/
+Live site: https://atlasafterblue.earth/
 
 ## What this is
 
@@ -41,6 +41,22 @@ The site has five pages:
 - **About** covers the team and the project.
 
 A history strip shows three observations (2, 14 and 26 July) on one shared brightness scale. This is visual context for how the area looked before the event. It does not change the detection result or its confidence.
+How the app works
+The app is a static site with five pages, each doing one job:
+
+Home introduces the flood event and shows a before/after comparison, so a first-time visitor sees the change immediately.
+
+- Report is the main result view. It has three tabs: an interactive Leaflet map of candidate patches, permanent water and backscatter change; a before/after swipe; and a side-by-side compare.
+
+- Method explains the detection pipeline and its limits, in plain language with a glossary.
+
+- Sources lists the data and event references behind every claim.
+
+- About covers the team and the project.
+
+All result numbers are loaded from JSON files in aab/data/, so the same figures appear on every page without being retyped. A history strip on the Home page shows three observations (2, 14 and 26 July) on one shared brightness scale as visual context; it does not affect the detection result or its confidence.
+
+How a visitor uses it: open the Report page, switch between the map, swipe and side-by-side views to see where the ground changed, then read Method for what the flags mean and Sources for where the data came from.
 
 ## How the detection works
 
@@ -90,9 +106,9 @@ Deployment is configured for Netlify in `netlify.toml`, with the publish directo
 
 ## Tech
 
-- Vanilla HTML, CSS and JavaScript, no framework or bundler
+- HTML, CSS and JavaScript
 - Leaflet 1.9.4 for the interactive Report map
-- IBM Plex Sans and Mono via Google Fonts
+- Search_Data Api
 - GeoJSON and JSON data rendered client-side
 - Netlify static hosting
 
@@ -106,13 +122,14 @@ These are stated in the app and are worth repeating here:
 - Narrow tributary channels can fall below the 10 m grid and the 400 m² minimum mapping unit.
 - The data are provisional, and the result has not been checked against independent optical imagery or field observations. The event is corroborated only qualitatively by the PDMA KP situation report.
 
-## Team
+## Team - dnov_1
 
-- Mamuna Ahmad: Research and Documentation
-- Syed Saim Ali: Data Science, SAR Pipeline
-- Tamreena Tashfeen: Frontend Development
-- Sharmeen Shahid: Image Analysis and Reporting
-- Muhammad Ayan Toqeer: Backend and API
+- Tamreena Tashfeen: Project Lead & Director
+- Syed Saim Ali: SAR Pipeline & Geospatial Processing Engineer
+- Mamuna Ahmad: Research & Product Validation Lead
+- Muhammad Ayan Toqeer: Coordination & Operations Lead
+- Sharmeen Shahid: Shahid	Scientific Reporting Specialist
+
 
 ## Data sources and acknowledgement
 
@@ -123,6 +140,3 @@ These are stated in the app and are worth repeating here:
 
 > Contains modified data from the NASA-ISRO Synthetic Aperture Radar (NISAR) mission, provided by the ASF DAAC. Imagery for this study was searched and obtained from ASF Vertex. Flood event details referenced from the Provincial Disaster Management Authority, Khyber Pakhtunkhwa.
 
-## License
-
-No license file has been added yet. If you want others to reuse the code, add one (for example MIT) at the repository root.
